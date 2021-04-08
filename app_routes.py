@@ -4,6 +4,7 @@ from flask import request
 from config import app, bot, secret
 
 
+@app.route('/')
 @app.route('/healthcheck')
 def healthcheck():
     return '<h1>OK. Server still runing...</h1>'
