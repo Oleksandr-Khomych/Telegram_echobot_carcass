@@ -12,6 +12,8 @@ ip_address = ip_address_bytes.decode("utf-8")
 bot = telebot.TeleBot(token, parse_mode=None)
 
 bot.remove_webhook()
+exit(1)
+
 webhook_url = f'https://{ip_address}:{port}/{secret}'
 bot.set_webhook(webhook_url)
 
